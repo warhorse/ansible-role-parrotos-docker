@@ -7,8 +7,9 @@ Ansible Parrot OS (Docker)
 ![License](https://img.shields.io/github/license/warhorse/ansible-role-parrotos-docker)
 ![Commit](https://img.shields.io/github/last-commit/warhorse/ansible-role-parrotos-docker)
 
-![Parrot OS Logo](./images/parrot_os_logo.png "Parrot OS Logo")
+<img src='./images/parrot_os_logo.png' width='100'>
 
+<center><img src='./images/desktop.png' width='400'></center>
 
 Install Parrot OS (Docker)
 
