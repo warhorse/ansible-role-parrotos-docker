@@ -4,8 +4,8 @@
     path: '{{ item }}'
     state: directory
   with_items:
-  - '{{ parrotos_dir }}'
-  - '{{ parrotos_dir }}/data'
+    - '{{ parrotos_dir }}'
+    - '{{ parrotos_dir }}/data'
 
 - name: Adding Dockerfile
   template:
@@ -37,6 +37,9 @@
     restart_policy: unless-stopped
     published_ports: "{{ parrotos_ports }}"
     labels: '{{ parrotos_docker_labels }}'
+    shm_size: 2GB
+    capabilities:
+      - NET_ADMIN
     volumes:
      - "{{ parrotos_dir }}/data:{{ parrotos_data_dir }}"
     env:
