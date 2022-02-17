@@ -28,3 +28,7 @@ parrotos_dir: '/opt/docker/parrotos'
 parrotos_data_dir: '/parrotos'
 parrotos_ports:
   - "0.0.0.0:80:6080"
+
+docker_daemon:
+  - storage-opts:
+      dm.basesize: 20G 

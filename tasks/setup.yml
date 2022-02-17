@@ -7,3 +7,19 @@
       - subnet: '{{ parrotos_network_ipam_subnet }}'
         gateway: '{{ parrotos_network_ipam_gateway }}'
         iprange: '{{ parrotos_network_ipam_iprange }}'
+
+- name: Ensure docker json file exists
+  copy:
+    content: "{}"
+    dest: /etc/docker/daemon.json
+    force: false
+
+- name: Check that the /etc/docker/daemon.json exists
+  stat:
+    path: /etc/docker/daemon.json
+  register: stat_result
+
+- name: Write json file
+  copy:
+    dest: /etc/docker/daemon.json
+    content: "{{ docker_daemon | to_json }}" 
