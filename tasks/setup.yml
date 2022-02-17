@@ -1,0 +1,8 @@
+- name: 'setup : create parrot os docker network'
+  become: true
+  docker_network:
+    name: '{{ parrotos_docker_network }}'
+    ipam_config:
+      - subnet: '{{ parrotos_network_ipam_subnet }}'
+        gateway: '{{ parrotos_network_ipam_gateway }}'
+        iprange: '{{ parrotos_network_ipam_iprange }}'
