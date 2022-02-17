@@ -1,9 +1,9 @@
 Ansible Parrot OS (Docker)
 =========
 [![CI](https://github.com/warhorse/ansible-role-parrotos-docker/workflows/CI/badge.svg?event=push)](https://github.com/warhorse/ansible-role-parrotos-docker/actions?query=workflow%3ACI)
-[![warhorse.parrotos_docker](https://img.shields.io/ansible/role/57696)](https://galaxy.ansible.com/warhorse/parrotos_docker)
-[![warhorse.parrotos_docker](https://img.shields.io/ansible/quality/57696)](https://galaxy.ansible.com/warhorse/parrotos_docker)
-[![warhorse.parrotos_docker](https://img.shields.io/ansible/role/d/57696)](https://galaxy.ansible.com/warhorse/parrotos_docker)
+[![warhorse.parrotos_docker](https://img.shields.io/ansible/role/58075)](https://galaxy.ansible.com/warhorse/parrotos_docker)
+[![warhorse.parrotos_docker](https://img.shields.io/ansible/quality/58075)](https://galaxy.ansible.com/warhorse/parrotos_docker)
+[![warhorse.parrotos_docker](https://img.shields.io/ansible/role/d/58075)](https://galaxy.ansible.com/warhorse/parrotos_docker)
 ![License](https://img.shields.io/github/license/warhorse/ansible-role-parrotos-docker)
 ![Commit](https://img.shields.io/github/last-commit/warhorse/ansible-role-parrotos-docker)
 

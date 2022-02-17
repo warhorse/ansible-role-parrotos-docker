@@ -9,7 +9,7 @@
 
 - name: Adding Dockerfile
   template:
-    src: "{{ item }}"
+    src: "{{ item }}.j2"
     dest: "{{ parrotos_dir }}/{{ item }}"
     mode: 0600
   with_items:
@@ -24,6 +24,7 @@
       pull: yes
     name: parrotos
     source: build
+    force_source: yes
 
 - name: parrotos
   docker_container:
